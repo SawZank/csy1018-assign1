@@ -23,7 +23,7 @@ header{
   background: white;
 }
 .name:hover a{
-  color: #143125;
+  color: white;
   text-shadow: 10px 4px 20px black,  10px 14px 20px black;
 
 }
@@ -61,7 +61,7 @@ header{
 
 }
 .navbar ul li:hover a{
-  color: #143125;
+  color: white;
   text-shadow: 10px 4px 30px black,  10px 14px 30px black;
 }
 body{
@@ -74,8 +74,14 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
 
+}
+footer{
+  position: fixed;
+  width: 100%;
+  padding: 5% 0 0 0;
+  margin: 0;
+}
 footer ul li{
   list-style: none;
 }
@@ -86,30 +92,45 @@ footer ul li a{
 }
 
 .main{
-  padding: 8% 0 0 0;
+  padding: 8% 0 0 0%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+
 }
-.info{
-  font-family: Sigmar+One;
-  font-size: 100px;
+.caption{
+    padding: 0% 3%% 6% 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.hello{
+
+  font-size: 150px;
   font-weight: bold;
   color: white;
-  text-shadow: 3px 3px 15px black;
-  padding: 8% 10%% 6% 2%;
+  text-shadow: 3px 3px 10px black;
+  font-family: 'Rancho';
 
-
-  float: right;
 }
+.welcome{
+  font-family: 'Caveat';
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+
+  }
+
 .photo{
-    padding: 2% 2% 6% 10%;
-    height: auto;
-    width: auto;
-    max-width: 400px;
-    max-height: 450px;
-    min-width: 100px;
-    min-height: 100px;
+    padding: 2% 6% 0% 6%;
+
+    max-width: 360px;
+    max-height: 360px;
+    min-width: 350px;
+    min-height: 350px;
+    margin: 0;
 }
 @media (max-width: 865px){
 	header{
@@ -125,8 +146,19 @@ footer ul li a{
   }
 
 }
-@media and (max-width: 300px){
-.main{
+@media (max-width: 1300px) and (min-width:800px){
+  /**.main{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}**/
+  .photo{
+    height:600px;
+    width:800px;
+    padding: 6% 2% 6% 2%;
+  }
+  .info{
+    font-size: 55px;
+
+  }
 }
