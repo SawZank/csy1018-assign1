@@ -6,11 +6,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/index.css"> <!--An external css file "index.css" has been linked-->
     <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Rancho|Caveat|"> <!--This is used to link google api font "Tangerine"-->
+      href="https://fonts.googleapis.com/css?family=Rancho|Caveat|"> <!--This is used to link google api fonts "Rancho" and "Caveat"-->
 
     <title>Home Page</title>
   </head>
-  <body><!--This body portion contains things that the browser will display-->
+
+<!--The body structure of the web page starts from here-->
+  <body>
+
+    <!--This part is for the header of the page-->
     <header>
       <div class="name"><!--A div called "name" has been created for the logo of the page-->
         <a href="index.html">Shasanka Acharya
@@ -24,33 +28,41 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-    </header> <!--This part is for the header of the page-->
+    </header> <!--The header part ends here-->
 
       <div class="main">
-        <div class="photo"><!--A class "photo" has been created for my display picture in the page-->
-        <img class="photo" src="images/me.png">
+        <div class="photo"><!--A class "photo" has been created for adding my image in the page-->
+        <img class="photo" src="images/me.png"><!--This is the link for my image-->
         </div>
-        <div class="caption">
-          <div class="hello"><!--This class "info" is for the short information along my picture in my homepage-->
+        <div class="caption"><!--This class "caption" is for a small message to be displayed alongside my picture-->
+          <div class="hello">
           Hi!
           </div>
           <div class="welcome">
           Welcome to my page!
           </div>
+          <div class="info">
+            <div class="more">Want to find out more about me?<br>Check out my CV and my biography.
+            </div>
+            <div class="contact">
+              Wish to Contact me?<br>Find out how from the navigation bar!
+            </div>
+          </div>
         </div>
     </div>
-    </section>
     <footer><!--This is the footer of the page-->
-
-
+      <!--<div class="find">
+        Find me on these sites!
+      </div>-->
       <div class="social">
       <ul class="social">
         <li><a href=""><img src="images/Facebook.png"></li>
         <li><a href=""><img src="images/Google+.png"></li>
         <li><a href=""><img src="images/Twitter.png"></li>
+        <li><a href=""><img src="images/Github.png"></li>
       </ul>
       </div>
     </footer>
 
-  </body>
-</html>
+  </body><!--The body strucutre of the web page ends here-->
+</html><!--End of the html document-->

@@ -1,5 +1,6 @@
 /**Student Name: Shasanka Acharya.
       Student Number:16418524 **/
+/**The styling of the header portion of the page begins here**/
 header{
   display: flex;
   flex-direction: row;
@@ -17,19 +18,19 @@ header{
 .name{
   background:white;
   font-family: 'Rancho', cursive;
-  font-size: 50px;
+  font-size: 42px;
 }
 .name:hover{
   background: white;
 }
 .name:hover a{
   color: white;
-  text-shadow: 10px 4px 20px black,  10px 14px 20px black;
+  text-shadow: 10px 4px 30px black,  10px 14px 30px black;
 
 }
-.navbar{ /**This is the class for navigation bar**/
+.navbar{
   padding: 2% 0% 0% 0%;
-  background:white;/*a hex colour code has been used for the background colour of the navigation bar*/
+  background:white;
   width: 100%;
 }
 
@@ -64,6 +65,9 @@ header{
   color: white;
   text-shadow: 10px 4px 30px black,  10px 14px 30px black;
 }
+/**The styling of the header portion of the page ends here**/
+
+/**The body of the web page is styled below**/
 body{
   margin:0;
   background-color: #e7f98c;
@@ -76,20 +80,7 @@ body{
   justify-content: center;
 
 }
-footer{
-  position: fixed;
-  width: 100%;
-  padding: 5% 0 0 0;
-  margin: 0;
-}
-footer ul li{
-  list-style: none;
-}
-footer ul li a{
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-}
+
 
 .main{
   padding: 8% 0 0 0%;
@@ -123,6 +114,35 @@ footer ul li a{
 
   }
 
+.more{
+    background-color: #393a56;
+    display:block;
+    font-family: 'Rancho';
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 7px 4px 13px black;
+    box-shadow: 20px 20px 30px black;
+  }
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+.contact{
+  background-color: #639a56;
+  display:block;
+  font-family: 'Rancho';
+  font-size: 40px;
+  margin: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 7px 4px 13px black;
+  box-shadow: 20px 20px 30px black;
+
+}
 .photo{
     padding: 2% 6% 0% 6%;
 
@@ -132,6 +152,36 @@ footer ul li a{
     min-height: 350px;
     margin: 0;
 }
+
+/**The footer of the page is styled below**/
+footer{
+  position: fixed;
+  /**display: flex;
+  flex-direction: row;
+  justify-content: space-between;**/
+  width: 100%;
+  padding: 5% 0 0 0;
+  margin: 0;
+}
+footer ul li{
+  list-style: none;
+}
+footer ul li a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+.find{
+  font-family: 'Caveat';
+  font-size: 30px;
+  background-color: pink;
+
+}
+.social{
+  height: 10%;
+}
+
+/**This portion deals with making the web page responsive to different media screen sizes**/
 @media (max-width: 865px){
 	header{
     display: flex;
@@ -157,8 +207,5 @@ footer ul li a{
     width:800px;
     padding: 6% 2% 6% 2%;
   }
-  .info{
-    font-size: 55px;
 
-  }
 }
