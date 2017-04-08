@@ -6,11 +6,11 @@ header{
   flex-direction: row;
   justify-content: space-between;
   background-color: #161515;
-  position:sticky;
   width: 100%;
   box-shadow: 1px 5px 14px black, 1px 5px 14px black;
   margin:0;
   padding: 0;
+  position: fixed;
 
 }
 .indcont{/**the styling of the header for the index page only is done here**/
@@ -18,11 +18,12 @@ header{
   flex-direction: row;
   justify-content: space-between;
   background-color: #161515;
-  position: sticky;
+  position: inherit;
   width: 100%;
   box-shadow: 1px 5px 14px black, 1px 5px 14px black;
 }
 
+/**Name/log in the nav bar is styled here**/
 .saname a{
   text-decoration: none;
   color:white;
@@ -42,6 +43,7 @@ header{
   text-shadow: 5px 2px 5px #920000,  5px 5px 5px #920000;
 
 }
+/**The icons in the nav bar is styled here**/
 .snavbar{
   padding:0%;
   width: 100%;
@@ -80,7 +82,6 @@ header{
   background-color: #920000;
   color: white;
   opacity: 0.9;
-  border: 100%;
 }
 
 .snavbar li a:hover:not(.snavact) {
@@ -163,7 +164,6 @@ body{
     display:block;
     font-family: 'Rancho';
     font-size: 2.5em;
-    heigh:auto;
     text-align: center;
     color: white;
     text-shadow: 7px 4px 13px black;
@@ -233,10 +233,10 @@ body{
 
 /**The styling of the CV page begins here**/
   .cvcont{
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 
   }
@@ -251,12 +251,13 @@ body{
 
 
   }
-  .cvedu ul p{
+  .cvedu p{
     color:white;
     font-size: 1.1em;
     text-shadow: 4px 4px 4px black;
     font-weight: bold;
     font-family: 'Catamaran';
+    padding-left: 2%;
   }
 
   .cvedu ul li{
@@ -265,11 +266,12 @@ body{
   font-family: 'Catamaran';
   }
 
-  .sacoursework ul p{
+  .sacoursework p{
     text-shadow: 4px 4px 4px black;
     color:white;
     font-weight: bold;
     font-family: 'Catamaran';
+    padding-left: 2%;
 
   }.sacoursework ul li{
     text-shadow: 4px 4px 4px black;
@@ -277,11 +279,12 @@ body{
     font-family: 'Catamaran';
   }
 
-  .cvskills ul p{
+  .cvskills p{
     text-shadow: 4px 4px 4px black;
     color:white;
     font-weight: bold;
     font-family: 'Catamaran';
+    padding-left: 2%;
   }
 
   .cvskills ul li{
@@ -302,7 +305,6 @@ body{
     display: block;
     background-image: url("../images/aboutback.jpg");
     padding:10% 0 0 20%;
-    border-color: black;
     color:white;
     background-repeat: round;
     font-size: 0.9em;
@@ -348,7 +350,6 @@ body{
 
 /**The footer of the page is styled below**/
 footer {
-  position:sticky;
   height:auto;
   background-color: #161515;
   margin:auto;
@@ -400,6 +401,7 @@ footer ul li a{
 
 /**This portion deals with making the web page responsive to different media screen sizes**/
 @media all and (max-width:1200px){
+  /**The Bio page is being made responsive here for screens with max width:1200px**/
   .passage{
     padding-top: 10%;
     background-repeat: round;
@@ -412,17 +414,21 @@ footer ul li a{
     font-size: 3em;
     margin-top: 15px;
   }
+
   .pbody{
     font-size: 1em;
   }
+
   .bcont{
     flex-direction: column;
     text-align: center;
   }
-.biopic{
+
+  .biopic{
   flex-direction: row;
   margin:10% auto 0 auto;
-}
+  }
+
   .bpic1{
     max-width: 300px;
     max-height: 200px;
@@ -435,8 +441,10 @@ footer ul li a{
     max-height: 200px;
     padding:10% 4% 2% 2%;
   }
-  }
+}
+
 @media all and (max-width:891px){
+  /**The parts of footer are being made responsive here for width:891px**/
   .sasocial{
     text-align: center;
   }
@@ -453,7 +461,8 @@ footer ul li a{
   }
 }
 @media all and (max-width:810px){
-  .samain{
+
+  .samain{/**This is the main div of the index page It is being made responsive for 810px width.**/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -462,18 +471,22 @@ footer ul li a{
     margin-bottom: 25%;
 
   }
-  .cvcont{
-    padding-top:10%;
-  }
+
   .hihello, .sawelc{
   margin:0;
   }
   .saphoto{
     margin-left: auto;
     margin-right: auto;
+  }/**The styling of main div ends here for 810px width.**/
+
+  .cvcont{/**This is the div for the CV page**/
+    padding-top:10%;
   }
 
-  .sasocial{
+
+
+  .sasocial{/**This is the div for the footer**/
     justify-content: space-around;
   }
 
@@ -500,162 +513,154 @@ footer ul li a{
   .sasocial{
     margin: 0 auto;
   }
-  input{
+  input{/**The input of the form from contact page is being styled here**/
     font-size: 0.45em;
   }
 }
 @media all and (max-width:664px){
-.sasocial img{
-  max-width: 100px;
-  max-height: 100px;
-}
-.indcont{
-  height: auto;
+  .sasocial img{/**This is for the socialicons in the footer**/
+    max-width: 100px;
+    max-height: 100px;
+  }
 
-}
-.passage{
-  padding-top: 10%;
-  background-repeat: no-repeat;
-  font-size: 0.9em;
-  margin:0 auto;
-}
+  .indcont{/**this is the div for index's navigation bar**/
+    height: auto;
+  }
+  /**The bio page is made responsive here or max-width:664px**/
+  .passagehead{
+    font-size: 3em;
+    margin-top: 15px;
+  }
 
-.passagehead{
-  font-size: 3em;
-  margin-top: 15px;
-}
-.pbody{
-  font-size: 0.7em;
-}
-.bcont{
-  margin:0;
-  padding:10%;
-  height:100%;
+  .pbody{
+    font-size: 0.7em;
+  }
+  .bcont{
+    margin:0;
+    padding:10%;
+    height:100%;
+   }
+  .biopic{
+    display: none;
+    margin:0;
+  padding:0
 
-}
-.biopic{
-display: none;
-margin:0;
-padding:0
+  }
 
-}
-.passage{
-  padding: 0;
-  padding-top: 60%;
-  padding-bottom: 40%;
-  width:100%;
-  margin:0 auto;
-  background-image: none;
-  background-color: black;
-}
-.pbody{
-  font-size: 1em;
-}
-.phead{
-  margin
-}
+  .passage{
+    padding: 0;
+    padding-top: 60%;
+    padding-bottom: 40%;
+    width:100%;
+    margin:0 auto;
+    background-image: none;
+    background-color: black;
+    background-repeat: no-repeat;
+    font-size: 0.9em;
+    padding-top: 10%;
+  }
+  .pbody{
+    font-size: 1em;
+  }/**The styling for bio page ends here for the width:664px**/
 
 }
 
-@media all and (max-width:572px){
-.saphoto img{
-max-width: 300px;
-max-height: 300px;
-margin: 0 auto;
-}
-.sasocial img{
-  max-width: 60px;
-  max-height: 60px;
-}
-footer p{
-  font-size: 0.7em;
-}
+@media all and (max-width:572px){/**The page is made responsive for screens with max-width 572px in this secion**/
+  .saphoto img{
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  .sasocial img{
+    max-width: 60px;
+    max-height: 60px;
+  }
+  footer p{
+    font-size: 0.7em;
+  }
 
-label{
-  font-size: 0.6em;
-}
-.snavbar ul li{
-height:auto;
-}
+  label{
+    font-size: 0.6em;
+  }
+  .snavbar ul li{
+    height:auto;
+  }
 
-.snavbar ul li a{
-  font-size: 6em;
+  .snavbar ul li a{
+    font-size: 6em;
+    padding:0;
+  }
+  .snavbar img{
+    max-width: 40px;
+    max-height: 40px;
+  }
 
-  padding:0;
-}
-.snavbar img{
-  max-width: 40px;
-  max-height: 40px;
+  .saname{
+    font-size: 1.7em;
+    margin-left: 0;
+    padding:0;
+  }
+  .formcont{
+    margin:0 auto;
+    padding:30%  4%;
 
-}
-.saname{
-  font-size: 1.7em;
-  margin-left: 0;
-  padding:0;
-}
-.formcont{
-  margin:0 auto;
-  padding:30%  4%;
+  }
+  legend{
+    font-size: 0.7em;
+  }
+  .inname{
+    width: 50%;
+  }
 
-}
-legend{
-  font-size: 0.7em;
-}
-.inname{
-  width: 50%;
-}
+  .incomment{
+    width: 50%;
+  }
+  .bcont{
+    padding-top: 10%;
 
-.incomment{
-  width: 50%;
+ }
 }
-.bcont{
-  padding-top: 10%;
+ /**The page is made responsive for screens with max-width 465px in this secion**/
+@media all and (max-width:463px){
+ .saphoto{
+    padding:0;
+    margin:0;
+    min-width: 205px;
 
-}
-@media all and (max-width:465px){
-.saphoto{
-  padding:0;
-  margin:0;
-  min-width: 205px;
+  }
+  .saphoto img{
+    max-width: 200px;
+    max-height: 200px;
+  }
 
-}
-.saphoto img{
-  max-width: 200px;
-  max-height: 200px;
+  .saphoto:hover{
+    transform: none;
+  }
 
-}
-.saphoto:hover{
-transform: none;
-}
+  .sasocial p{
+    font-size: 1em;
+  }
 
-.sasocial p{
-font-size: 1em;
-}
-.sasocial img{
-  max-width: 50px;
-  max-height: 50px;
-}
+  .sasocial img{
+    max-width: 50px;
+    max-height: 50px;
+  }
 
-.indcont{
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-header{
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-.snavbar ul li{
-justify-content: space-around;
-}
+  .indcont{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .snavbar ul li{
+    justify-content: space-around;
+  }
   .snavbar ul li a{
     font-size: 6.5em;
     padding:0;
   }
   .samain{
     max-width:100%;
-    overflow: 0;
     text-align: center;
 
   }
@@ -708,22 +713,8 @@ justify-content: space-around;
     text-align: center;
     padding: 2%;
   }
-  .biopic{
-    margin:0 auto;
-    padding-top:8%;
-    max-width: 500px;
-  }
-  .bpic1{
-    max-width:240px;
-    max-height: 120px;
-  }
-
-  .bpic2{
-    max-width:240px;
-    max-height: 120px;
-  }
 }
-@media all and (max-width:390px){
+@media all and (max-width:390px){/**The page is made responsive for screens with max-width 390px in this secion**/
   .sasocial img{
     max-width: 45px;
     max-height: 45px;
@@ -747,44 +738,48 @@ justify-content: space-around;
     margin-right: auto;
     overflow: hidden;
   }
-.indcont{
-  display: flex;
-  flex-direction: column;
+  .indcont{
+    display: flex;
+    flex-direction: column;
 
-}
-.biopic{
-  margin:0 auto;
-  padding-top:70%;
-}
-.bpic1{
-  max-width:240px;
-  max-height: 120px;
+  }
+  .passagehead{
+    padding-top:80%;
+  }
+
+  .biopic{
+    margin:0 auto;
+    padding-top:70%;
+  }
+  .bpic1{
+    max-width:240px;
+    max-height: 120px;
 }
 
-.bpic2{
-  max-width:240px;
-  max-height: 120px;
-}
-header{
-  display: flex;
-  flex-direction: column;
+  .bpic2{
+    max-width:240px;
+    max-height: 120px;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
 
-}
-.snavbar ul{
-  display: flex;
-  flex-direction: column;
+  }
+  .snavbar ul{
+    display: flex;
+    flex-direction: column;
 
-}
-.snavbar ul li{
-  display: flex;
-  flex-direction: column;
+  }
+  .snavbar ul li{
+    display: flex;
+    flex-direction: column;
 
-  font-size: 0.2em;
-  width: 100%;
-}
-.snavbar li a.snavact {
-  min-width:100%;
-}
+    font-size: 0.2em;
+    width: 100%;
+  }
+  .snavbar li a.snavact {
+    min-width:100%;
+  }
 
   .samain{
     justify-content: flex-end;
@@ -828,7 +823,7 @@ header{
   }
 
 }
-@media all and (max-width:322px){
+@media all and (max-width:322px){/**The page is made responsive for screens with max-width 322px in this secion**/
   .cvcont{
     padding-top:100%;
     font-size:0.9em;
@@ -836,24 +831,22 @@ header{
   .snavbar img{
     max-width: 50px;
     max-height: 50px;
-
   }
+}
 
-}
-}
-@media all and (max-width:275px){
+@media all and (max-width:275px){/**The page is made responsive for screens with max-width 275px in this secion**/
   .cvcont{
     padding-top:100%;
     font-size:0.5em;
- }
- .snavbar img{
-   max-width: 25px;
-   max-height: 25px;
+   }
+   .snavbar img{
+     max-width: 25px;
+     max-height: 25px;
 
- }
+   }
 
 }
-@media all and (max-width:240px){
+@media all and (max-width:240px){/**The page is made responsive for screens with max-width 240px in this secion**/
   .saphoto {
     min-height: 130px;
     min-width: 130px;
@@ -869,3 +862,5 @@ header{
 
   }
 }
+
+/**End of the stylesheet document**/
