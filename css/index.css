@@ -6,40 +6,49 @@ header{
   flex-direction: row;
   justify-content: space-between;
   background-color: #161515;
-  position:fixed;
+  position:sticky;
   width: 100%;
   box-shadow: 1px 5px 14px black, 1px 5px 14px black;
-
+  margin:0;
+  padding: 0;
 
 }
+.indcont{/**the styling of the header for the index page only is done here**/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #161515;
+  position: sticky;
+  width: 100%;
+  box-shadow: 1px 5px 14px black, 1px 5px 14px black;
+}
 
-.name a{
+.saname a{
   text-decoration: none;
   color:white;
   transition: all 0.7s ease;
 }
-.name{
+.saname{
   background:#161515;
   font-family: 'Rancho', cursive;
   font-size: 2.5em;
 
 }
-.name:hover{
+.saname:hover{
   color: #161515;
 }
-.name:hover a{
+.saname:hover a{
 
   text-shadow: 5px 2px 5px #920000,  5px 5px 5px #920000;
 
 }
-.navbar{
+.snavbar{
   padding:0%;
   width: 100%;
   height: auto;
-
 }
 
-.navbar ul{
+.snavbar ul{
   display: flex;
   flex-direction: row;
   justify-content:space-around;
@@ -49,194 +58,814 @@ header{
   color: black;
   font-weight: bold;
   overflow: hidden;
-
-
 }
 
-.navbar ul li{
-
+.snavbar ul li{
    list-style: none;
-   height:100px; !important
-   width:100px;  !important
-
-
+   height:100px;
+   width:100px;
 }
 
-.navbar ul li a{
+.snavbar ul li a{
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-family: 'Rancho';
   font-size: 10.875em;
-  padding: 12px 0;
   transition: all 0.38s ease;
   padding: 0px 10px;
-
 }
 
-.navbar li a.navact {
-    background-color: #920000;
-    color: white;
-    opacity: 0.9;
-    border: 100%;
+.snavbar li a.snavact {
+  background-color: #920000;
+  color: white;
+  opacity: 0.9;
+  border: 100%;
 }
 
-.navbar li a:hover:not(.navact) {
-    background-color: #920000;
+.snavbar li a:hover:not(.snavact) {
+  background-color: #920000;
 }
 
 /**The styling of the header portion of the page ends here**/
 
 /**The body of the web page is styled below**/
 body{
-  margin:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   background-image: url("../images/web.jpg");
   height: auto;
   display: block;
+  width:100%;
 
 }
+/**This portion is for the body of the home/index page**/
+  .samain{
+      padding: 2% 0 0 0%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 5%;
+      height: 100%;
+    }
+  .caption{
+      padding: 6% 0 6% 0%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+  }
+  .hihello{
+      font-size: 9.375em;
+      font-weight: bold;
+      color: white;
+      text-shadow: 8px 6px 8px black;
+      font-family: 'Rancho';
+      margin-left: 50px;
+  }
 
-
-.social{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-}
-
-
-.main{
-  padding: 8% 0 0 0%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: auto;
-
-}
-.caption{
-    padding: 0% 3%% 6% 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-}
-.hello{
-
-  font-size: 9.375em;
-  font-weight: bold;
-  color: white;
-  text-shadow: 3px 3px 10px black;
-  font-family: 'Rancho';
-
-}
-.welcome{
-  font-family: 'Caveat';
-  font-size: 3.75em;
-  font-weight: bold;
-  color: white;
-  text-shadow: 3px 3px 10px black;
+  .sawelc{
+      font-family: 'Caveat';
+      font-size: 3.75em;
+      font-weight: bold;
+      color: white;
+      text-shadow: 5px 3px 4px black;
 
   }
 
-.more{
-    background-color: #393a56;
+  .info{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      height: auto;
+      text-align: center;
+  }
+
+  .wmore{
+      background-color: #393a56;
+      display:block;
+      font-family: 'Rancho';
+      font-size: 2.5em;
+
+      text-align: center;
+      color: white;
+      text-shadow: 7px 4px 13px black;
+      box-shadow: 20px 20px 30px black;
+      text-align: center;
+      height: auto;
+      margin:2%;
+
+  }
+
+  .wview{
+    background-color: #639a56;
     display:block;
     font-family: 'Rancho';
     font-size: 2.5em;
-    margin: 20px;
+    heigh:auto;
     text-align: center;
     color: white;
     text-shadow: 7px 4px 13px black;
     box-shadow: 20px 20px 30px black;
+    padding:8px;
+    margin: 2%;
   }
-.info{
+
+  .saphoto{
+
+    margin-right:6%;
+    margin-left: 2%;
+    margin-top:3%;
+    overflow: hidden;
+
+    transition: all 0.45s;
+    min-width: 365px;
+  }
+  .saphoto img{
+    max-width: 100%;
+    margin-right: 20px;
+    width: 360px;
+    height: 360px;
+    border: 2px solid black;
+    border-radius: 50%;
+    max-width: 360px;
+    max-height: 360px;
+
+  }
+  .saphoto:hover{
+    transform: scale(1.08);
+  }
+/**The styling section of the home/index page ends here**/
+
+/**The styling of the Contact page begins here**/
+  form{
+    height: auto;
+    margin:0 auto;
+    padding:15%;
+    font-family: 'Catamaran';
+    font-size: 1.6em;
+  }
+  legend{
+    font-family:tahoma;
+    color: #f7fbf2;
+    padding:10px;
+  }
+  fieldset{
+    border: 4px solid;
+    border-radius: 25px;
+    background: #f7fbf2;
+    width: 100%;
+  }
+  label{
+    font-family:'Catamaran';
+  }
+  .inname{
+    height:30px;
+    width: 50%;
+  }
+  .formcont{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+/**The styling of the contact page ends here.**/
+
+/**The styling of the CV page begins here**/
+  .cvcont{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+  }
+  .cvhead{
+    padding-top:10%;
+    padding-left: 2%;
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+    text-shadow: 4px 4px 4px black;
+    font-family: 'Rancho';
+
+
+  }
+  .cvedu ul p{
+    color:white;
+    font-size: 1.1em;
+    text-shadow: 4px 4px 4px black;
+    font-weight: bold;
+    font-family: 'Catamaran';
+  }
+
+  .cvedu ul li{
+  text-shadow: 4px 4px 4px black;
+  color:white;
+  font-family: 'Catamaran';
+  }
+
+  .sacoursework ul p{
+    text-shadow: 4px 4px 4px black;
+    color:white;
+    font-weight: bold;
+    font-family: 'Catamaran';
+
+  }.sacoursework ul li{
+    text-shadow: 4px 4px 4px black;
+    color:white;
+    font-family: 'Catamaran';
+  }
+
+  .cvskills ul p{
+    text-shadow: 4px 4px 4px black;
+    color:white;
+    font-weight: bold;
+    font-family: 'Catamaran';
+  }
+
+  .cvskills ul li{
+    text-shadow: 4px 4px 4px black;
+    color:white;
+    font-family: 'Catamaran';
+  }
+  /**The styling of the CV portion of the page ends here**/
+
+  /**The styling of the Bio page begins here**/
+  .bcont{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+  }
+  .passage{
+    display: block;
+    background-image: url("../images/aboutback.jpg");
+    padding:10% 0 0 20%;
+    border-color: black;
+    color:white;
+    background-repeat: round;
+    font-size: 0.9em;
+    width: auto;
 
   }
-.contact{
-  background-color: #639a56;
-  display:block;
-  font-family: 'Rancho';
-  font-size: 2.5em;
-  margin: 20px;
-  text-align: center;
-  color: white;
-  text-shadow: 7px 4px 13px black;
-  box-shadow: 20px 20px 30px black;
 
-}
-.photo{
-    padding: 2% 6% 0% 6%;
-    border-radius: 50%;
-    max-width: 360px;
-    max-height: 360px;
-    min-width: 350px;
-    min-height: 350px;
+  .passagehead{
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Rancho';
+    color:white;
+  }
+  .pbody{
+    font-family: 'Caveat';
+    font-size: 1.2em;
+  }
+  .bpic1{
+    max-width: 500px;
+    max-height: 400px;
+    padding:10% 4% 0 2%;
     margin: 0;
-}
+  }
+
+  .bpic2{
+    max-width: 500px;
+    max-height: 400px;
+    padding:0 4% 0 2%;
+  }
+
+  .biopic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:0;
+    margin-top: 4%;
+    width: 80%;
+  }
+  /**The styling of the Bio page ends here.**/
+
+/**The styling of the body portion of the pages ends here**/
+
 
 /**The footer of the page is styled below**/
 footer {
-  position: inherit;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
+  position:sticky;
+  height:auto;
+  background-color: #161515;
+  margin:auto;
+  width: 100%;
+}
+footer p{
+  color:white;
+  font-family: 'caveat';
+
 }
 footer ul li{
   list-style: none;
+
 }
 footer ul li a{
   text-decoration: none;
   display: flex;
   flex-direction: row;
 
-}
-.find{
-  font-family: 'Caveat';
-  font-size: 1.875em;
-  background-color: pink;
 
 }
-.social{
-  height: 10%;
+.sasocial p{
+  font-size:1.8em;
 }
+
+.sasocial ul{
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  justify-content: center;
+
+}
+.socmn{
+  color:white;
+  font-family:'caveat';
+  padding:1%;
+
+}
+.sasocial{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  padding:4%;
+
+
+}
+
+/**The styling of the footer portion ends here**/
 
 /**This portion deals with making the web page responsive to different media screen sizes**/
-@media (max-width:1080px) and (min-width:1001px){
-  .photo{
-    height:600px;
-    width:800px;
-    padding: 0S% 2% 6% 2%;
+@media all and (max-width:1200px){
+  .passage{
+    padding-top: 10%;
+    background-repeat: round;
+    font-size: 0.9em;
+    width:60%;
+    margin:0 auto;
+  }
+
+  .passagehead{
+    font-size: 3em;
+    margin-top: 15px;
+  }
+  .pbody{
+    font-size: 1em;
+  }
+  .bcont{
+    flex-direction: column;
+    text-align: center;
+  }
+.biopic{
+  flex-direction: row;
+  margin:10% auto 0 auto;
+}
+  .bpic1{
+    max-width: 300px;
+    max-height: 200px;
+    padding:10% 4% 2% 2%;
+    margin: 0;
+  }
+
+  .bpic2{
+    max-width: 300px;
+    max-height: 200px;
+    padding:10% 4% 2% 2%;
+  }
+  }
+@media all and (max-width:891px){
+  .sasocial{
+    text-align: center;
+  }
+  .sasocial p{
+    font-size: 1.1em;
+    margin:0;
+    padding:0;
+    width: 100%;
+  }
+  footer img{
+    max-width: 120px;
+    max-height:120px;
+    margin:0 auto;
+  }
+}
+@media all and (max-width:810px){
+  .samain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align:center;
+    padding: 8% 0% 3% 5%;
+    margin-bottom: 25%;
 
   }
+  .cvcont{
+    padding-top:10%;
+  }
+  .hihello, .sawelc{
+  margin:0;
+  }
+  .saphoto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sasocial{
+    justify-content: space-around;
+  }
+
+
+}
+@media all and (max-width:768px){
+  .samain{
+    padding: 8% 0% 0 0%;
+    margin-bottom: 25%;
+  }
+
+  .hihello{
+    font-size: 8em;
+  }
+  .sawelc{
+    font-size: 3em;
+  }
+
+  .wmore{
+    height: auto;
+    overflow: hidden;
+  }
+
+  .sasocial{
+    margin: 0 auto;
+  }
+  input{
+    font-size: 0.45em;
+  }
+}
+@media all and (max-width:664px){
+.sasocial img{
+  max-width: 100px;
+  max-height: 100px;
+}
+.indcont{
+  height: auto;
+
+}
+.passage{
+  padding-top: 10%;
+  background-repeat: no-repeat;
+  font-size: 0.9em;
+  margin:0 auto;
+}
+
+.passagehead{
+  font-size: 3em;
+  margin-top: 15px;
+}
+.pbody{
+  font-size: 0.7em;
+}
+.bcont{
+  margin:0;
+  padding:10%;
+  height:100%;
+
+}
+.biopic{
+display: none;
+margin:0;
+padding:0
+
+}
+.passage{
+  padding: 0;
+  padding-top: 60%;
+  padding-bottom: 40%;
+  width:100%;
+  margin:0 auto;
+  background-image: none;
+  background-color: black;
+}
+.pbody{
+  font-size: 1em;
+}
+.phead{
+  margin
+}
 
 }
 
-@media (max-width: 1000px) and (min-width:660px){
-  /**.main{
+@media all and (max-width:572px){
+.saphoto img{
+max-width: 300px;
+max-height: 300px;
+margin: 0 auto;
+}
+.sasocial img{
+  max-width: 60px;
+  max-height: 60px;
+}
+footer p{
+  font-size: 0.7em;
+}
+
+label{
+  font-size: 0.6em;
+}
+.snavbar ul li{
+height:auto;
+}
+
+.snavbar ul li a{
+  font-size: 6em;
+
+  padding:0;
+}
+.snavbar img{
+  max-width: 40px;
+  max-height: 40px;
+
+}
+.saname{
+  font-size: 1.7em;
+  margin-left: 0;
+  padding:0;
+}
+.formcont{
+  margin:0 auto;
+  padding:30%  4%;
+
+}
+legend{
+  font-size: 0.7em;
+}
+.inname{
+  width: 50%;
+}
+
+.incomment{
+  width: 50%;
+}
+.bcont{
+  padding-top: 10%;
+
+}
+@media all and (max-width:465px){
+.saphoto{
+  padding:0;
+  margin:0;
+  min-width: 205px;
+
+}
+.saphoto img{
+  max-width: 200px;
+  max-height: 200px;
+
+}
+.saphoto:hover{
+transform: none;
+}
+
+.sasocial p{
+font-size: 1em;
+}
+.sasocial img{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.indcont{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+header{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.snavbar ul li{
+justify-content: space-around;
+}
+  .snavbar ul li a{
+    font-size: 6.5em;
+    padding:0;
+  }
+  .samain{
+    max-width:100%;
+    overflow: 0;
+    text-align: center;
+
+  }
+  .snavbar img{
+    max-width: 40px;
+    max-height: 40px;
+
+  }
+  .snavbar{
+    padding:0;
+    margin:0;
+  }
+  .saname{
+    font-size: 1.2em;
+    margin-left: 0;
+    padding-right:1%;
+  }
+  .caption{
+    margin:0;
+    padding:0;
+    text-align: inherit;
+  }
+  .hihello{
+    font-size: 7.8em;
+    padding: 0;
+    margin: 0;
+  }
+  .info{
+    text-align: center;
+    padding:0;
+    margin:0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .wmore{
+    font-size: 1.2em;
+    height: auto;
+    margin:auto;
+    margin-bottom: 3%;
+    width: auto;
+    text-align: center;
+    padding: 1%;
+  }
+  .wview{
+    font-size: 1.2em;
+    height: auto;
+    margin:auto;
+    width: auto;
+    text-align: center;
+    padding: 2%;
+  }
+  .biopic{
+    margin:0 auto;
+    padding-top:8%;
+    max-width: 500px;
+  }
+  .bpic1{
+    max-width:240px;
+    max-height: 120px;
+  }
+
+  .bpic2{
+    max-width:240px;
+    max-height: 120px;
+  }
+}
+@media all and (max-width:390px){
+  .sasocial img{
+    max-width: 45px;
+    max-height: 45px;
+  }
+  .sasocial p{
+    font-size:0.8em;
+  }
+  .saphoto img{
+    max-width: 140px;
+    max-height: 140px;
+    margin:0;
+    padding:0;
+  }
+  .saphoto{
+    min-width:150px;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+.indcont{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-}**/
-  .photo{
-    height:600px;
-    width:800px;
-    padding: 6% 2% 6% 2%;
-    margin-top: 4%;
+
+}
+.biopic{
+  margin:0 auto;
+  padding-top:70%;
+}
+.bpic1{
+  max-width:240px;
+  max-height: 120px;
+}
+
+.bpic2{
+  max-width:240px;
+  max-height: 120px;
+}
+header{
+  display: flex;
+  flex-direction: column;
+
+}
+.snavbar ul{
+  display: flex;
+  flex-direction: column;
+
+}
+.snavbar ul li{
+  display: flex;
+  flex-direction: column;
+
+  font-size: 0.2em;
+  width: 100%;
+}
+.snavbar li a.snavact {
+  min-width:100%;
+}
+
+  .samain{
+    justify-content: flex-end;
+  }
+  .caption{
+    margin-bottom: 10px;;
+    padding:0;
+  }
+  .snavbar img{
+    max-height: 60px;
+    max-width: 60px;
+  }
+  .saname{
+    font-size: 1.2em;
+  }
+
+  .sawelc{
+    font-size: 2.4em;
+  }
+  .hihello{
+    font-size: 6em;
+    margin:0;
+    padding:0;
+  }
+  .formcont{
+    margin:0 auto;
+    padding:90% 10% 0 0;
+    text-align: left;
+
+  }
+  legend{
+    font-size: 0.5em;
+  }
+  .sasocial{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .cvcont{
+    padding-top:80%;
   }
 
 }
-@media (max-width: 659px) and (min-width:200px)
-@media (max-width: 400px) and (min-width:200px){
-  .photo{
-    max-height:200px;
-    max-width:200px;
-    padding: 6% 2% 6% 2%;
-    margin-top: 4%;
+@media all and (max-width:322px){
+  .cvcont{
+    padding-top:100%;
+    font-size:0.9em;
+  }
+  .snavbar img{
+    max-width: 50px;
+    max-height: 50px;
+
+  }
+
+}
+}
+@media all and (max-width:275px){
+  .cvcont{
+    padding-top:100%;
+    font-size:0.5em;
+ }
+ .snavbar img{
+   max-width: 25px;
+   max-height: 25px;
+
+ }
+
+}
+@media all and (max-width:240px){
+  .saphoto {
+    min-height: 130px;
+    min-width: 130px;
+  }
+  .saphoto img{
+    max-height: 110px;
+    max-width: 110px;
+  }
+  .sasocial ul{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+
   }
 }
