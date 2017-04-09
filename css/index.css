@@ -72,12 +72,16 @@ header{
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Rancho';
+  font-family: 'Rancho',cursive;
   font-size: 10.875em;
   transition: all 0.38s ease;
   padding: 0px 10px;
 }
-
+/**The following codes are to make the navigation bar active. While the code is original, the idea of the code was taken from W3schools.
+*    Title: CSS Navigation bar>Active/Current Link
+*    Author: w3schools.com
+*    Date: 25/March/2017
+*    Source: https://www.w3schools.com/css/css_navbar.asp **/
 .snavbar li a.snavact {
   background-color: #920000;
   color: white;
@@ -122,12 +126,12 @@ body{
       font-weight: bold;
       color: white;
       text-shadow: 8px 6px 8px black;
-      font-family: 'Rancho';
+      font-family: 'Rancho',cursive;
       margin-left: 50px;
   }
 
   .sawelc{
-      font-family: 'Caveat';
+      font-family: 'Caveat',cursive;
       font-size: 3.75em;
       font-weight: bold;
       color: white;
@@ -146,7 +150,7 @@ body{
   .wmore{
       background-color: #393a56;
       display:block;
-      font-family: 'Rancho';
+      font-family: 'Rancho',cursive;
       font-size: 2.5em;
 
       text-align: center;
@@ -162,7 +166,7 @@ body{
   .wview{
     background-color: #639a56;
     display:block;
-    font-family: 'Rancho';
+    font-family: 'Rancho',cursive;
     font-size: 2.5em;
     text-align: center;
     color: white;
@@ -203,7 +207,7 @@ body{
     height: auto;
     margin:0 auto;
     padding:15%;
-    font-family: 'Catamaran';
+    font-family: 'Catamaran',cursive;
     font-size: 1.6em;
   }
   legend{
@@ -218,7 +222,7 @@ body{
     width: 100%;
   }
   label{
-    font-family:'Catamaran';
+    font-family:'Catamaran',cursive;
   }
   .inname{
     height:30px;
@@ -238,7 +242,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
 
-
   }
   .cvhead{
     padding-top:10%;
@@ -247,7 +250,7 @@ body{
     color: white;
     text-align: left;
     text-shadow: 4px 4px 4px black;
-    font-family: 'Rancho';
+    font-family: 'Rancho',cursive;
 
 
   }
@@ -256,41 +259,41 @@ body{
     font-size: 1.1em;
     text-shadow: 4px 4px 4px black;
     font-weight: bold;
-    font-family: 'Catamaran';
+    font-family: 'Catamaran',cursive;
     padding-left: 2%;
   }
 
   .cvedu ul li{
   text-shadow: 4px 4px 4px black;
   color:white;
-  font-family: 'Catamaran';
+  font-family: 'Catamaran',cursive;
   }
 
   .sacoursework p{
     text-shadow: 4px 4px 4px black;
     color:white;
     font-weight: bold;
-    font-family: 'Catamaran';
+    font-family: 'Catamaran',cursive;
     padding-left: 2%;
 
   }.sacoursework ul li{
     text-shadow: 4px 4px 4px black;
     color:white;
-    font-family: 'Catamaran';
+    font-family: 'Catamaran',cursive;
   }
 
   .cvskills p{
     text-shadow: 4px 4px 4px black;
     color:white;
     font-weight: bold;
-    font-family: 'Catamaran';
+    font-family: 'Catamaran',cursive;
     padding-left: 2%;
   }
 
   .cvskills ul li{
     text-shadow: 4px 4px 4px black;
     color:white;
-    font-family: 'Catamaran';
+    font-family: 'Catamaran',cursive;
   }
   /**The styling of the CV portion of the page ends here**/
 
@@ -315,11 +318,11 @@ body{
   .passagehead{
     font-size: 4em;
     text-align: center;
-    font-family: 'Rancho';
+    font-family: 'Rancho',cursive;
     color:white;
   }
   .pbody{
-    font-family: 'Caveat';
+    font-family: 'Caveat',cursive;
     font-size: 1.2em;
   }
   .bpic1{
@@ -357,7 +360,7 @@ footer {
 }
 footer p{
   color:white;
-  font-family: 'caveat';
+  font-family: 'caveat',cursive;
 
 }
 footer ul li{
@@ -384,7 +387,7 @@ footer ul li a{
 }
 .socmn{
   color:white;
-  font-family:'caveat';
+  font-family:'caveat',cursive;
   padding:1%;
 
 }
